@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Asif’s Birthday Thank You 🎂</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+@property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
+:root{--bg:#07060f;--tx:#f5f3ff;--mut:#b9b4d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:radial-gradient(circle at 20% 10%,#1b1040,transparent 50%),radial-gradient(circle at 80% 90%,#0b2a3f,transparent 50%),var(--bg);color:var(--tx);font-family:'Poppins','Noto Sans Bengali',system-ui,sans-serif;overflow-x:hidden;display:flex;align-items:center;justify-content:center;padding:28px 18px}
+@keyframes spin{to{--a:360deg}}
+.ring{background:conic-gradient(from var(--a),#f0f,#60f,#0ff,#0f0,#ff0,#f80,#f00,#f0f);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 4s linear infinite}
+.frame{position:fixed;inset:6px;border-radius:24px;padding:3px;pointer-events:none;z-index:5;filter:drop-shadow(0 0 7px #b6f)}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+.sh{position:fixed;z-index:0;border:2px solid;opacity:.35;animation:fl 12s ease-in-out infinite;pointer-events:none}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(0) rotateY(0)}50%{transform:translateY(-40px) rotate(180deg) rotateY(180deg)}}
+.bl{position:fixed;bottom:-80px;font-size:44px;z-index:4;pointer-events:none;animation:rise linear forwards}
+@keyframes rise{to{transform:translateY(-120vh) translateX(var(--dx))}}
+.wrap{perspective:1000px;width:100%;max-width:440px;position:relative;z-index:6}
+.card{position:relative;border-radius:26px;padding:26px 22px 22px;background:rgba(255,255,255,.07);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 40px rgba(170,80,255,.25);text-align:center;transition:transform .15s ease-out;will-change:transform}
+.card::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:2px;pointer-events:none;background:conic-gradient(from var(--a),#f0f,#60f,#0ff,#0f0,#ff0,#f80,#f00,#f0f);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin 4s linear infinite}
+.scene{perspective:600px;width:84px;height:84px;margin:4px auto 22px}
+.cube{position:relative;width:100%;height:100%;transform-style:preserve-3d;animation:rot 9s linear infinite,hue 6s linear infinite}
+.cube div{position:absolute;inset:0;display:grid;place-items:center;font-size:38px;border:2px solid #0ff;background:rgba(0,255,255,.08);box-shadow:0 0 14px #0ff inset,0 0 14px #f0f}
+.cube div:nth-child(1){transform:translateZ(42px)}.cube div:nth-child(2){transform:rotateY(90deg) translateZ(42px)}.cube div:nth-child(3){transform:rotateY(180deg) translateZ(42px)}.cube div:nth-child(4){transform:rotateY(-90deg) translateZ(42px)}.cube div:nth-child(5){transform:rotateX(90deg) translateZ(42px)}.cube div:nth-child(6){transform:rotateX(-90deg) translateZ(42px)}
+@keyframes rot{to{transform:rotateX(360deg) rotateY(360deg)}}
+@keyframes hue{to{filter:hue-rotate(360deg) drop-shadow(0 0 10px #f0f)}}
+h1{font-size:1.45rem;margin:0 0 6px;line-height:1.35}
+.sub{color:var(--mut);font-size:.9rem;margin:0 0 18px}
+input{width:100%;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:var(--tx);font:inherit;font-size:1rem;outline:none;text-align:center}
+input:focus{border-color:#0ff;box-shadow:0 0 14px rgba(0,255,255,.5)}
+.btn{display:block;width:100%;margin-top:12px;padding:13px 16px;border:0;border-radius:14px;font:inherit;font-weight:600;font-size:.98rem;color:#fff;cursor:pointer;background:linear-gradient(120deg,#8b3dff,#ff3d9a,#ff9d3d);background-size:200% 100%;transition:transform .15s,background-position .5s;text-decoration:none;-webkit-tap-highlight-color:transparent}
+.btn:active{transform:scale(.97)}.btn:hover{background-position:100% 0}
+.btn.wa{background:linear-gradient(120deg,#12b34a,#25d366)}
+.btn.ghost{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:0 0 14px}
+.chip{padding:7px 14px;border-radius:99px;border:1px solid rgba(255,255,255,.25);background:transparent;color:var(--tx);font:inherit;font-size:.82rem;cursor:pointer}
+.chip.on{background:linear-gradient(120deg,#8b3dff,#ff3d9a);border-color:transparent}
+.status{min-height:130px;display:grid;place-items:center;padding:18px 16px;border-radius:18px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12);font-size:1.02rem;line-height:1.7;transition:transform .25s ease-in}
+.hide{display:none}
+#snd{position:fixed;top:calc(env(safe-area-inset-top,0px) + 16px);right:18px;z-index:9;padding:7px 13px;border-radius:99px;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.5);color:var(--tx);font:inherit;font-size:.78rem;cursor:pointer}
+@media(prefers-reduced-motion:reduce){.cube,.sh{animation:none}}
+</style>
+</head>
+<body>
+<div class="frame ring"></div>
+<canvas id="fx"></canvas>
+<button id="snd" type="button">🔊 Sound On</button>
+
+<div class="wrap">
+  <main class="card" id="card">
+    <div class="scene"><div class="cube"><div>🎂</div><div>🎁</div><div>👑</div><div>🎉</div><div>🎈</div><div>✨</div></div></div>
+
+    <section id="v1">
+      <h1>What is your name?<br>আপনার নাম কী?</h1>
+      <p class="sub">Asif’s Birthday · আসিফের জন্মদিন 🎂</p>
+      <input id="nm" type="text" maxlength="30" placeholder="Enter your name..." autocomplete="off" autocapitalize="words">
+      <button class="btn" id="go" type="button">Continue · এগিয়ে যান ✨</button>
+    </section>
+
+    <section id="v2" class="hide">
+      <h1 id="ttl"></h1>
+      <p class="sub" id="sb"></p>
+      <div class="chips" id="chips"></div>
+      <div class="status" id="st"></div>
+      <button class="btn" id="nx" type="button"></button>
+      <a class="btn wa" id="wa" target="_blank" rel="noopener"></a>
+      <button class="btn ghost" id="bk" type="button"></button>
+    </section>
+  </main>
+</div>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var T={
+ en:{ttl:'Thank you, {n}! 💖',sb:'Your birthday wish made my day',nx:'Next Status 🔄',wa:'Contact with Asif',bk:'Change name',snd:['🔊 Sound On','🔇 Sound Off'],rel:['Friend 🤝','Family 🏡','Loved one 💖'],
+ msg:'Hello Asif, I am {n}. Happy Birthday! 🎂',
+ s:[[
+ '{n}, your birthday wish felt like sunshine on a cloudy day. Thank you for being my friend. ☀️',
+ 'Friends like you, {n}, turn ordinary days into stories. Thank you for remembering me! 🤝',
+ 'Your words made my day sparkle, {n}. Cheers to many more memories together! 🥂'],[
+ '{n}, your love is the roof over my dreams. Thank you for the blessings and prayers. 🏡',
+ 'Family is where my heart lives. Thank you, {n}, for making my day so special. 💞',
+ 'Your wish carries all the warmth of home, {n}. I’m grateful beyond words. 🤲'],[
+ '{n}, you are the sweetest gift of my year. Thank you for wishing me with your heart. 💖',
+ 'Among all the wishes, yours, {n}, shines like a star. Thank you for being you. ⭐',
+ 'Every wish from you feels like a poem written just for me, {n}. Thank you! 🌹']]},
+ bn:{ttl:'ধন্যবাদ, {n}! 💖',sb:'আপনার শুভেচ্ছা আমার দিনটা রাঙিয়ে দিয়েছে',nx:'নতুন স্ট্যাটাস দেখুন 🔄',wa:'আসিফের সাথে যোগাযোগ করুন',bk:'নাম পরিবর্তন করুন',snd:['🔊 সাউন্ড চালু','🔇 সাউন্ড বন্ধ'],rel:['বন্ধু 🤝','পরিবার 🏡','প্রিয়জন 💖'],
+ msg:'হ্যালো আসিফ, আমি {n}। শুভ জন্মদিন! 🎂',
+ s:[[
+ '{n}, তোমার শুভেচ্ছা মেঘলা দিনে এক ঝলক রোদের মতো লেগেছে। বন্ধু হয়ে পাশে থাকার জন্য ধন্যবাদ। ☀️',
+ '{n}, তোমার মতো বন্ধুরা সাধারণ দিনকেও গল্প বানিয়ে দেয়। আমাকে মনে রাখার জন্য ধন্যবাদ! 🤝',
+ 'তোমার কথাগুলো আমার দিনটাকে ঝলমলে করে দিয়েছে, {n}। সামনে আরও অনেক স্মৃতির অপেক্ষায়! 🥂'],[
+ '{n}, তোমার ভালোবাসা আমার স্বপ্নের ছায়া। দোয়া আর আশীর্বাদের জন্য কৃতজ্ঞ। 🏡',
+ 'পরিবার মানেই হৃদয়ের ঠিকানা। দিনটা বিশেষ করে তোলার জন্য ধন্যবাদ, {n}। 💞',
+ '{n}, তোমার শুভেচ্ছায় ঘরের উষ্ণতা মিশে আছে। ভাষায় প্রকাশ করার মতো নয় এই কৃতজ্ঞতা। 🤲'],[
+ '{n}, তুমি আমার এই বছরের সবচেয়ে মধুর উপহার। মন থেকে শুভেচ্ছা জানানোর জন্য ধন্যবাদ। 💖',
+ 'সব শুভেচ্ছার ভিড়ে তোমারটা, {n}, তারার মতো জ্বলজ্বল করছে। তুমি তুমিই থেকো। ⭐',
+ '{n}, তোমার প্রতিটি শুভেচ্ছা যেন আমার জন্যই লেখা একটা কবিতা। ধন্যবাদ! 🌹']]}
+};
+var WA='https://wa.me/qr/Y2SYFF6WYMVEB1';
+var name='',L='en',cat=0,idx=0,soundOn=true,AC=null;
+
+/* ---------- Sound ---------- */
+function ctx(){try{if(!AC)AC=new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();}catch(e){}return AC}
+function chime(notes){
+ if(!soundOn)return;var c=ctx();if(!c)return;
+ notes.forEach(function(f,i){
+  var o=c.createOscillator(),g=c.createGain(),t=c.currentTime+i*.11;
+  o.type='sine';o.frequency.value=f;
+  g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.16,t+.02);g.gain.exponentialRampToValueAtTime(.001,t+.7);
+  o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+.75);
+ });
+}
+var CL=[784,988],CS=[523,659,784,1047,1319];
+
+/* ---------- Background shapes ---------- */
+['#0ff','#f0f','#ff0','#0f0','#f80','#60f'].forEach(function(c,i){
+ var d=document.createElement('div');d.className='sh';
+ var s=30+Math.random()*40;
+ d.style.cssText='width:'+s+'px;height:'+s+'px;left:'+(Math.random()*90)+'%;top:'+(Math.random()*85)+'%;color:'+c+';border-color:'+c+';box-shadow:0 0 14px '+c+';animation-delay:-'+(i*2)+'s;border-radius:'+(i%3===0?'50%':i%3===1?'6px':'0');
+ if(i%3===2)d.style.clipPath='polygon(50% 0,100% 100%,0 100%)';
+ document.body.appendChild(d);
+});
+
+/* ---------- Canvas FX ---------- */
+var cv=$('fx'),g=cv.getContext('2d'),W=0,H=0,dpr=Math.min(window.devicePixelRatio||1,2),P=[],running=false;
+function size(){W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;g.setTransform(dpr,0,0,dpr,0,0)}
+size();addEventListener('resize',size);
+function burst(x,y){
+ var h=Math.random()*360;
+ for(var i=0;i<70;i++){var a=Math.random()*6.283,v=1.5+Math.random()*4.5;
+  P.push({k:'f',x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,d:.012+Math.random()*.012,c:'hsl('+(h+Math.random()*40)+',100%,60%)',s:2})}
+}
+function confetti(n){
+ for(var i=0;i<n;i++)P.push({k:'c',x:Math.random()*W,y:-20-Math.random()*H*.4,vx:(Math.random()-.5)*2,vy:2+Math.random()*3,l:1,d:.003,r:Math.random()*6,vr:(Math.random()-.5)*.3,w:6+Math.random()*6,c:'hsl('+Math.random()*360+',100%,60%)'});
+}
+function spark(x,y){P.push({k:'t',x:x,y:y,vx:(Math.random()-.5)*1.2,vy:(Math.random()-.5)*1.2,l:1,d:.04,c:'hsl('+(Date.now()/5%360)+',100%,65%)',s:3})}
+function loop(){
+ g.globalCompositeOperation='destination-out';g.fillStyle='rgba(0,0,0,.22)';g.fillRect(0,0,W,H);
+ g.globalCompositeOperation='lighter';
+ for(var i=P.length-1;i>=0;i--){var p=P[i];
+  p.x+=p.vx;p.y+=p.vy;p.l-=p.d;
+  if(p.k==='f'){p.vy+=.05;p.vx*=.985;p.vy*=.985}
+  if(p.k==='c'){p.r+=p.vr;p.vx+=Math.sin(p.y/30)*.04}
+  if(p.l<=0||p.y>H+30){P.splice(i,1);continue}
+  g.globalAlpha=Math.max(p.l,0);g.fillStyle=p.c;
+  if(p.k==='c'){g.save();g.translate(p.x,p.y);g.rotate(p.r);g.fillRect(-p.w/2,-p.w/4,p.w,p.w/2);g.restore()}
+  else{g.beginPath();g.arc(p.x,p.y,p.s,0,6.283);g.fill()}
+ }
+ g.globalAlpha=1;
+ if(P.length||running)requestAnimationFrame(loop);else{g.clearRect(0,0,W,H);looping=false}
+}
+var looping=false;
+function kick(){if(!looping){looping=true;requestAnimationFrame(loop)}}
+function show(){
+ running=true;kick();confetti(140);
+ var n=0,t=setInterval(function(){burst(W*(.15+Math.random()*.7),H*(.12+Math.random()*.4));n++;if(n%3===0)confetti(30);if(n>14){clearInterval(t);running=false}},420);
+ for(var i=0;i<14;i++)(function(i){setTimeout(function(){
+  var b=document.createElement('div');b.className='bl';b.textContent='🎈';
+  b.style.left=(Math.random()*92)+'%';b.style.setProperty('--dx',((Math.random()-.5)*80)+'px');
+  b.style.animationDuration=(6+Math.random()*5)+'s';b.style.filter='hue-rotate('+(Math.random()*360)+'deg)';
+  document.body.appendChild(b);setTimeout(function(){b.remove()},11500);
+ },i*300)})(i);
+}
+var lastT=0;
+addEventListener('pointermove',function(e){var n=Date.now();if(n-lastT<30)return;lastT=n;spark(e.clientX,e.clientY);kick()},{passive:true});
+
+/* ---------- 3D tilt ---------- */
+var card=$('card');
+function tilt(e){var r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+ card.style.transform='rotateY('+(x*16)+'deg) rotateX('+(-y*16)+'deg)'}
+card.addEventListener('pointermove',tilt);
+['pointerleave','pointerup','pointercancel'].forEach(function(ev){card.addEventListener(ev,function(){card.style.transform=''})});
+
+/* ---------- App logic ---------- */
+function fill(s){return s.split('{n}').join(name)}
+function detect(s){return /[\u0980-\u09FF]/.test(s)?'bn':'en'}
+function setStatus(){$('st').textContent=fill(T[L].s[cat][idx])}
+function render(){
+ var t=T[L];
+ document.documentElement.lang=L==='bn'?'bn':'en';
+ $('ttl').textContent=fill(t.ttl);$('sb').textContent=t.sb;
+ $('nx').textContent=t.nx;$('wa').textContent='💬 '+t.wa;$('bk').textContent=t.bk;
+ $('snd').textContent=soundOn?t.snd[0]:t.snd[1];
+ $('wa').href=WA+'?text='+encodeURIComponent(fill(t.msg));
+ var c=$('chips');c.innerHTML='';
+ t.rel.forEach(function(r,i){var b=document.createElement('button');b.type='button';b.className='chip'+(i===cat?' on':'');b.textContent=r;
+  b.onclick=function(){cat=i;idx=0;chime(CL);render();flip()};c.appendChild(b)});
+ setStatus();
+}
+function flip(){
+ var s=$('st');s.style.transform='rotateY(90deg)';
+ setTimeout(function(){setStatus();s.style.transition='none';s.style.transform='rotateY(-90deg)';
+  void s.offsetWidth;s.style.transition='transform .25s ease-out';s.style.transform='rotateY(0)'},250);
+}
+function submit(){
+ var v=$('nm').value.trim();
+ if(!v){$('nm').focus();$('nm').style.borderColor='#f55';return}
+ name=v;L=detect(v);cat=0;idx=Math.floor(Math.random()*3);
+ $('v1').classList.add('hide');$('v2').classList.remove('hide');
+ render();chime(CS);show();
+}
+$('go').onclick=submit;
+$('nm').addEventListener('keydown',function(e){if(e.key==='Enter')submit()});
+$('nm').addEventListener('input',function(){this.style.borderColor=''});
+$('nx').onclick=function(){idx=(idx+1)%3;chime(CL);flip();show()};
+$('wa').addEventListener('click',function(){chime(CL)});
+$('bk').onclick=function(){chime(CL);$('v2').classList.add('hide');$('v1').classList.remove('hide');L='en';$('snd').textContent=soundOn?T.en.snd[0]:T.en.snd[1];$('nm').focus()};
+$('snd').onclick=function(){soundOn=!soundOn;$('snd').textContent=T[L].snd[soundOn?0:1];if(soundOn){ctx();chime(CL)}};
+})();
+</script>
+</body>
+</html>
